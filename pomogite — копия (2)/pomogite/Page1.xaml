@@ -1,0 +1,30 @@
+﻿<Page x:Class="pomogite.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pomogite"
+      mc:Ignorable="d" d:DesignWidth="1015" d:DesignHeight="582"
+      Title="Page1" Height="582" Width="1015">
+
+    <Grid Background="#FFFFEBF4" >
+
+        <Button x:Name="nachat" Content="Начать игру!" HorizontalAlignment="Center" Height="52" VerticalAlignment="Top" Width="166" Click="nachat_Click" FontSize="20" Background="#FFCE97E4" Foreground="White" Margin="0,354,0,0" IsEnabled="False"/>
+        <Button x:Name="lid" Content="Список лидеров" HorizontalAlignment="Center" Height="52" Margin="0,450,0,0" VerticalAlignment="Top" Width="166" FontSize="20" Background="#FFCE97E4" Foreground="White" Click="lid_Click" IsEnabled="False"/>
+        <Label Content="Спаси кота!" HorizontalAlignment="Left" Height="77" Margin="372,133,0,0" VerticalAlignment="Top" Width="301" FontSize="48" Background="Transparent" Foreground="#FFA730CC"/>
+        <Image HorizontalAlignment="Left" Height="316" Margin="679,234,0,0" VerticalAlignment="Top" Width="311" Source="/cat.png"/>
+        <Image HorizontalAlignment="Left" Height="652" Margin="-32,80,0,0" VerticalAlignment="Top" Width="605" Source="/юбон1.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBox x:Name="names" HorizontalAlignment="Center" Height="34" TextWrapping="Wrap" Text="Введите свое имя" VerticalAlignment="Top" Width="166" Margin="0,234,0,0"/>
+        <Button x:Name="SaveButton" Background="#FFCE97E4" Foreground="White" Content="Сохранить" HorizontalAlignment="Left" Height="27" Margin="470,0,0,0" VerticalAlignment="Center" Width="120" Click="SaveButton_Click"/>
+
+    </Grid>
+</Page>

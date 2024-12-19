@@ -1,0 +1,17 @@
+﻿<Page x:Class="pomogite.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pomogite"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page5">
+
+    <Grid Background="#FFFFEBF4">
+        <Button x:Name="sloz" FontSize="20" Background="#FFCE97E4" Foreground="White" Content="сложно" HorizontalAlignment="Left" Height="53" VerticalAlignment="Center" Width="140" Click="sloz_Click" Margin="539,0,0,0"/>
+        <Button x:Name="legk" Content="легко" FontSize="20" Background="#FFCE97E4" Foreground="White" HorizontalAlignment="Left" Height="54" Margin="209,0,0,0" VerticalAlignment="Center" Width="140" Click="legk_Click"/>
+        <Label Content="выбор сложности" HorizontalAlignment="Left" FontSize="36" Background="Transparent" Foreground="#FFA730CC" Height="58" Margin="279,84,0,0" VerticalAlignment="Top" Width="390"/>
+
+    </Grid>
+</Page>
